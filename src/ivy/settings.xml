@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- $Id$ -->
 <ivysettings>
     <resolvers>
         <packager name="ivyroundup"
           buildRoot="${basedir}/build/ivy/packager/build"
           resourceCache="${user.home}/.ivy2/packager/cache">
-        <!--
-            <ivy pattern="http://ivyroundup.googlecode.com/svn/trunk/repo/modules/[organisation]/[module]/[revision]/ivy.xml"/>
-            <artifact pattern="http://ivyroundup.googlecode.com/svn/trunk/repo/modules/[organisation]/[module]/[revision]/packager.xml"/>
-        -->
-            <ivy pattern="file:///opt/repo/roundup/modules/[organisation]/[module]/[revision]/ivy.xml"/>
-            <artifact pattern="file:///opt/repo/roundup/modules/[organisation]/[module]/[revision]/packager.xml"/>
+            <ivy pattern="http://archiecobbs.github.io/ivyroundup/repo/modules[organisation]/[module]/[revision]/ivy.xml"/>
+            <artifact pattern="http://archiecobbs.github.io/ivyroundup/repo/modules[organisation]/[module]/[revision]/packager.xml"/>
         </packager>
     </resolvers>
     <modules>
