@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- $Id$ -->
 <binding>
     <mapping name="Reject" class="org.dellroad.jibxbindings.twilio.twiml.Reject">
         <value name="reason" style="attribute" get-method="getReason" set-method="setReason" usage="optional"

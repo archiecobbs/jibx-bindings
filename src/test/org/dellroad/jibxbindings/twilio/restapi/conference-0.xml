@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- $Id$ -->
 <TwilioResponse>
     <Conference>
         <Sid>CFbbe46ff1274e283f7e3ac1df0072ab39</Sid>

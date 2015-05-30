@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- $Id$ -->
 <TwilioResponse>
     <SMSMessage>
         <Sid>SM90c6fc909d8504d45ecdb3a3d5b3556e</Sid>

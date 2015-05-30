@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- $Id$ -->
 <TwilioResponse>
     <ValidationRequest>
         <AccountSid>AC228ba5e5fede1b49e100272a8640f438</AccountSid>

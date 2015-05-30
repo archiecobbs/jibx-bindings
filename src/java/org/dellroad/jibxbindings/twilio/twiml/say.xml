@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- $Id$ -->
 <binding>
     <mapping name="Say" class="org.dellroad.jibxbindings.twilio.twiml.Say">
         <value name="voice" style="attribute" get-method="getVoice" set-method="setVoice"

@@ -1,5 +1,3 @@
-<!-- $Id$ -->
-
 <project name="jibx-bindings" default="build"
   xmlns:dellroad="urn:org.dellroad.ant"
   xmlns:antcontrib="urn:net.sf.antcontrib"

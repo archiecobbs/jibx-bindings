@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- $Id$ -->
 <TwilioResponse>
     <Conferences page="0" numpages="10" pagesize="50" total="462" start="0" end="49" uri="/2010-04-01/Accounts/AC5ef872f6da5a21de157d80997a64bd33/Conferences" firstpageuri="/2010-04-01/Accounts/AC5ef872f6da5a21de157d80997a64bd33/Conferences?Page=0&amp;PageSize=50" previouspageuri="" nextpageuri="/2010-04-01/Accounts/AC5ef872f6da5a21de157d80997a64bd33/Conferences?Page=1&amp;PageSize=50" lastpageuri="/2010-04-01/Accounts/AC5ef872f6da5a21de157d80997a64bd33/Conferences?Page=9&amp;PageSize=50">
         <Conference>

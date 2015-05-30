@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- $Id$ -->
 <binding>
     <mapping name="TwilioResponse" class="org.dellroad.jibxbindings.twilio.restapi.TwilioResponse">
         <structure get-method="getContent" set-method="setContent"/>

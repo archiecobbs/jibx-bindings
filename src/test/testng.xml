@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<!-- $Id$ -->
 <suite name="Unit Test Suite" verbose="1">
 
     <parameter name="logLevel" value="INFO"/>

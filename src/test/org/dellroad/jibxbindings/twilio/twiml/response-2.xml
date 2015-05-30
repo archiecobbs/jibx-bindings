@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- $Id$ -->
 <Response>
     <Say voice="woman">Here is my favorite sound</Say>
     <Play loop="10">/some/file.au</Play>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<!-- $Id$ -->
 <ns2:presence entity="pres:925099" xmlns:ns2="urn:ietf:params:xml:ns:pidf" xmlns="urn:ietf:params:xml:ns:geopriv:held" xmlns:ns4="urn:ietf:params:xml:ns:pidf:geopriv10:basicPolicy" xmlns:ns3="urn:ietf:params:xml:ns:pidf:geopriv10" xmlns:ns9="http://www.mapinfo.com/locationutility" xmlns:ns5="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr" xmlns:ns6="http://www.opengis.net/xls" xmlns:ns10="urn:ietf:params:xml:ns:geopriv:held:id" xmlns:ns7="http://www.opengis.net/gml" xmlns:ns8="http://www.mapinfo.com/xls">
     <ns2:tuple id="lisLocation">
         <ns2:status>

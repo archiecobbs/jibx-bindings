@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- $Id$ -->
 <binding>
     <mapping abstract="true" type-name="page" class="org.dellroad.jibxbindings.twilio.restapi.Page" ordered="false" flexible="true">
         <value name="page" style="attribute" get-method="getPage" set-method="setPage" usage="optional"/>

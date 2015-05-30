@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- $Id$ -->
 <presence entity="pres:temp@held.ng911.lab:55603" xmlns="urn:ietf:params:xml:ns:pidf">
   <tuple id="0a9999e0-1678-41d9-b0d2-d10a41a3e5e0">
     <status>

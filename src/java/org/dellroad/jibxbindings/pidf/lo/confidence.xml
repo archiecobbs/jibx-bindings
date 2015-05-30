@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- $Id$ -->
 <binding package="org.dellroad.jibxbindings.pidf.lo"
   xmlns:conf="urn:ietf:params:xml:ns:geopriv:conf">
     <mapping abstract="true" type-name="conf:confidence" class="org.dellroad.jibxbindings.pidf.lo.Confidence">

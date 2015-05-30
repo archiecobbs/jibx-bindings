@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- $Id$ -->
 <binding package="org.dellroad.jibxbindings.pidf.held" xmlns:held="urn:ietf:params:xml:ns:geopriv:held">
     <mapping abstract="true" type-name="held:message" class="org.dellroad.jibxbindings.pidf.LangContent">
         <value name="lang" field="lang" style="attribute" ns="http://www.w3.org/XML/1998/namespace" usage="optional"/>

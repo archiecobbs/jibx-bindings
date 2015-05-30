@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- $Id$ -->
 <!-- From https://tools.ietf.org/html/draft-ietf-ecrit-additional-data-24#page-25 -->
 <pidf:presence
   xmlns:pidf="urn:ietf:params:xml:ns:pidf"

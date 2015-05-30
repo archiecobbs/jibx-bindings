@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- $Id$ -->
 <TwilioResponse>
     <IncomingPhoneNumbers page="0" numpages="1" pagesize="50" total="6" start="0" end="5" uri="/2010-04-01/Accounts/ACdc5f1e11047ebd6fe7a55f120be3a900/IncomingPhoneNumbers" firstpageuri="/2010-04-01/Accounts/ACdc5f1e11047ebd6fe7a55f120be3a900/IncomingPhoneNumbers?Page=0&amp;PageSize=50" previouspageuri="" nextpageuri="" lastpageuri="/2010-04-01/Accounts/ACdc5f1e11047ebd6fe7a55f120be3a900/IncomingPhoneNumbers?Page=0&amp;PageSize=50">
         <IncomingPhoneNumber>

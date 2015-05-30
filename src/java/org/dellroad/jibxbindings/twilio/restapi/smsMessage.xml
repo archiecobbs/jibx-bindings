@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- $Id$ -->
 <binding>
     <include path="subresourceUris.xml"/>
     <mapping name="SMSMessage" class="org.dellroad.jibxbindings.twilio.restapi.SMSMessage" ordered="false" flexible="true">

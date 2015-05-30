@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- $Id$ -->
 <presence entity="pres:entity1017" xmlns="urn:ietf:params:xml:ns:pidf">
   <tuple id="lisLocation">
     <status>

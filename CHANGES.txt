@@ -62,5 +62,3 @@ Version 1.0.32 Released May 12, 2011
 Version 1.0.7 Released September 28, 2010
 
     - Initial release
-
-$Id$

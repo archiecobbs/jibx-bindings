@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- $Id$ -->
 <binding>
     <mapping name="RestException" class="org.dellroad.jibxbindings.twilio.restapi.RestException" ordered="false" flexible="true">
         <value name="Status" get-method="getStatus" set-method="setStatus"/>
