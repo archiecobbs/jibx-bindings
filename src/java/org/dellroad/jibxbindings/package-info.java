@@ -4,9 +4,9 @@
  */
 
 /**
- * Top level Java package for the <a href="http://jibx-bindings.googlecode.com/">JiBX Bindings</a> classes.
+ * Top level Java package for the <a href="https://github.com/archiecobbs/jibx-bindings">JiBX Bindings</a> classes.
  *
- * @see <a href="http://jibx-bindings.googlecode.com/">JiBX Bindings</a>
+ * @see <a href="https://github.com/archiecobbs/jibx-bindings">JiBX Bindings</a>
  */
 package org.dellroad.jibxbindings;
 

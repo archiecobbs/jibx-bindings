@@ -1,8 +1,6 @@
 
 /*
  * Copyright (C) 2011 Archie L. Cobbs. All rights reserved.
- *
- * $Id$
  */
 
 /**
@@ -10,7 +8,7 @@
  *
  * @see org.dellroad.jibxbindings.twilio.twiml
  * @see org.dellroad.jibxbindings.twilio.restapi
- * @see <a href="http://jibx-bindings.googlecode.com/">JiBX Bindings</a>
+ * @see <a href="https://github.com/archiecobbs/jibx-bindings">JiBX Bindings</a>
  */
 package org.dellroad.jibxbindings.twilio;
 

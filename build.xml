@@ -128,7 +128,7 @@
             <links>
                 <link href="http://docs.oracle.com/javase/7/docs/api/"/>
                 <link href="http://jibx.sourceforge.net/api/"/>
-                <link href="https://ez-vcard.googlecode.com/svn/javadocs/latest/"/>
+                <link href="http://mangstadt.github.io/ez-vcard/javadocs/latest/index.html"/>
             </links>
         </dellroad:javadoc>
     </target>

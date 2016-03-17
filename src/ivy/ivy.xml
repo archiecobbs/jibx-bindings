@@ -6,7 +6,7 @@
 
     <info organisation="org.dellroad" module="jibx-bindings">
         <license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
-        <description homepage="http://jibx-bindings.googlecode.com/">
+        <description homepage="https://github.com/archiecobbs/jibx-bindings">
             The jibx-bindings project
         </description>
     </info>

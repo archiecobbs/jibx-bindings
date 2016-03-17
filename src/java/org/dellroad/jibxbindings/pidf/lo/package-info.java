@@ -1,8 +1,6 @@
 
 /*
  * Copyright (C) 2010 Archie L Cobbs. All rights reserved.
- *
- * $Id$
  */
 
 /**
@@ -40,7 +38,7 @@
  * @see <a href="http://tools.ietf.org/html/rfc4119">RFC 4119</a>
  * @see <a href="http://tools.ietf.org/html/rfc5139">RFC 5139</a>
  * @see <a href="http://tools.ietf.org/html/rfc5491">RFC 5491</a>
- * @see <a href="http://jibx-bindings.googlecode.com/">JiBX Bindings</a>
+ * @see <a href="https://github.com/archiecobbs/jibx-bindings">JiBX Bindings</a>
  */
 package org.dellroad.jibxbindings.pidf.lo;
 

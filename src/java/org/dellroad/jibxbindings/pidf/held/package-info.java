@@ -1,8 +1,6 @@
 
 /*
  * Copyright (C) 2010 Archie L Cobbs. All rights reserved.
- *
- * $Id$
  */
 
 /**
@@ -34,7 +32,7 @@
  * </p>
  *
  * @see <a href="http://tools.ietf.org/html/rfc5985">RFC 5985</a>
- * @see <a href="http://jibx-bindings.googlecode.com/">JiBX Bindings</a>
+ * @see <a href="https://github.com/archiecobbs/jibx-bindings">JiBX Bindings</a>
  */
 package org.dellroad.jibxbindings.pidf.held;
 

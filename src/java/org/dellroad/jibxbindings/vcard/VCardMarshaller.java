@@ -1,8 +1,6 @@
 
 /*
  * Copyright (C) 2010 Archie L. Cobbs. All rights reserved.
- *
- * $Id$
  */
 
 package org.dellroad.jibxbindings.vcard;
@@ -41,7 +39,7 @@ import ezvcard.io.xml.XCardDocument;
  *  </pre>
  * </p>
  *
- * @see <a href="https://ez-vcard.googlecode.com">The EZ-vCard Project</a>
+ * @see <a href="https://github.com/mangstadt/ez-vcard">The EZ-vCard Project</a>
  * @see <a href="https://tools.ietf.org/html/rfc6351">RFC 6351</a>
  */
 public class VCardMarshaller extends DomElementMapper {
