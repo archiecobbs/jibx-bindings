@@ -12,6 +12,8 @@ import java.net.URI;
  */
 public class Sphere extends Solid {
 
+    private static final long serialVersionUID = -8992893941879422205L;
+
     private double[] center;
     private Measure radius;
 

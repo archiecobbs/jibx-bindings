@@ -5,6 +5,7 @@
 
 package org.dellroad.jibxbindings.pidf.held;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +14,7 @@ import org.dellroad.jibxbindings.pidf.LangContent;
 /**
  * The {@code <held:error>} XML element.
  */
-public class Error implements Cloneable {
+public class Error implements Cloneable, Serializable {
 
     public static final String REQUEST_ERROR = "requestError";
     public static final String XML_ERROR = "xmlError";
@@ -23,6 +24,8 @@ public class Error implements Cloneable {
     public static final String TIMEOUT = "timeout";
     public static final String CANNOT_PROVIDE_LI_TYPE = "cannotProvideLiType";
     public static final String NOT_LOCATABLE = "notLocatable";
+
+    private static final long serialVersionUID = 8175911097348526247L;
 
     private String code;
     private List<LangContent> messages = new ArrayList<LangContent>();

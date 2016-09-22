@@ -5,6 +5,7 @@
 
 package org.dellroad.jibxbindings.pidf;
 
+import java.io.Serializable;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +13,9 @@ import java.util.List;
 /**
  * Top level element in the Presence Information Data Format (PIDF).
  */
-public class Presence implements Cloneable {
+public class Presence implements Cloneable, Serializable {
+
+    private static final long serialVersionUID = -6425928356189967947L;
 
     private URI entity;
     private List<Component> components = new ArrayList<Component>();

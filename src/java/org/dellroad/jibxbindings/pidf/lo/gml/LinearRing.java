@@ -15,6 +15,8 @@ import java.net.URI;
  */
 public class LinearRing extends Geometry {
 
+    private static final long serialVersionUID = -3510490138034995712L;
+
     private double[] posList;
 
     public LinearRing() {

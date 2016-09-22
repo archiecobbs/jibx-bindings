@@ -15,6 +15,8 @@ import java.net.URI;
  */
 public class LineString extends Curve {
 
+    private static final long serialVersionUID = 6100197949880951960L;
+
     private double[] posList;
 
     public LineString() {

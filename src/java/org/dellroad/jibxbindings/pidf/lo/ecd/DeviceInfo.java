@@ -13,6 +13,8 @@ import java.util.List;
  */
 public class DeviceInfo extends AbstractDataProviderReferencing {
 
+    private static final long serialVersionUID = -7084493297634230715L;
+
     private String deviceClassification;
     private String deviceMfgr;
     private String deviceModelNr;

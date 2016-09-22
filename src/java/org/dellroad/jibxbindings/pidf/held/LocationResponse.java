@@ -5,12 +5,16 @@
 
 package org.dellroad.jibxbindings.pidf.held;
 
+import java.io.Serializable;
+
 import org.dellroad.jibxbindings.pidf.Presence;
 
 /**
  * The {@code <held:locationResponse>} XML element.
  */
-public class LocationResponse implements Cloneable {
+public class LocationResponse implements Cloneable, Serializable {
+
+    private static final long serialVersionUID = -4588365241733654554L;
 
     private LocationUriSet locationUriSet;
     private Presence presence;

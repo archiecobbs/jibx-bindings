@@ -5,10 +5,12 @@
 
 package org.dellroad.jibxbindings.pidf.held;
 
+import java.io.Serializable;
+
 /**
  * The {@code <held:locationRequest>} XML element.
  */
-public class LocationRequest implements Cloneable {
+public class LocationRequest implements Cloneable, Serializable {
 
     /**
      * Possible value for {@link #getResponseTime}.
@@ -19,6 +21,8 @@ public class LocationRequest implements Cloneable {
      * Possible value for {@link #getResponseTime}.
      */
     public static final String EMERGENCY_ROUTING = "emergencyRouting";
+
+    private static final long serialVersionUID = -5988182211196454277L;
 
     private String responseTime;
     private LocationType locationType;

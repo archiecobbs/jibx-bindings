@@ -16,6 +16,8 @@ import org.dellroad.jibxbindings.pidf.LangContent;
  */
 public class Comment extends AbstractDataProviderReferencing {
 
+    private static final long serialVersionUID = 13965674900770783L;
+
     private List<LangContent> comments = new ArrayList<>();
 
     public Comment() {

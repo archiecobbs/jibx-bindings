@@ -5,10 +5,12 @@
 
 package org.dellroad.jibxbindings.pidf.lo.ecd;
 
+import java.io.Serializable;
+
 /**
  * Support superclass.
  */
-public abstract class AbstractDataProviderReferencing implements Cloneable {
+public abstract class AbstractDataProviderReferencing implements Cloneable, Serializable {
 
     private String dataProviderReference;                   // mandatory
 

@@ -5,6 +5,7 @@
 
 package org.dellroad.jibxbindings.pidf.lo.ecd;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -12,7 +13,9 @@ import java.util.List;
 /**
  * The {@code <gp:EmergencyCallDataValue>} element.
  */
-public class EmergencyCallDataValue implements Cloneable {
+public class EmergencyCallDataValue implements Cloneable, Serializable {
+
+    private static final long serialVersionUID = -6999332208499404291L;
 
     private List<ProviderInfo> providerInfos = new ArrayList<>();
     private List<ServiceInfo> serviceInfos = new ArrayList<>();

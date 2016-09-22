@@ -5,12 +5,15 @@
 
 package org.dellroad.jibxbindings.pidf.lo.gml;
 
+import java.io.Serializable;
 import java.net.URI;
 
 /**
  * GML measure objects.
  */
-public class Measure implements Cloneable {
+public class Measure implements Cloneable, Serializable {
+
+    private static final long serialVersionUID = 3072779894402865971L;
 
     private URI uom;
     private double value;

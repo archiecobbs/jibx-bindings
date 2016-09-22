@@ -19,6 +19,8 @@ import ezvcard.VCard;
  */
 public class ProviderInfo extends AbstractDataProviderReferencing {
 
+    private static final long serialVersionUID = -587635968134426366L;
+
     private String dataProviderString;                      // mandatory
     private String providerId;
     private String providerIdSeries;

@@ -5,6 +5,7 @@
 
 package org.dellroad.jibxbindings.pidf;
 
+import java.io.Serializable;
 import java.net.URI;
 import java.util.Date;
 
@@ -15,7 +16,9 @@ import org.dellroad.jibxbindings.pidf.lo.GeoPriv;
  *
  * @see <a href="http://tools.ietf.org/html/rfc4479">RFC 4479</a>
  */
-public class Device implements Component {
+public class Device implements Component, Serializable {
+
+    private static final long serialVersionUID = 3921818714228506050L;
 
     private String id;
     private GeoPriv geoPriv;

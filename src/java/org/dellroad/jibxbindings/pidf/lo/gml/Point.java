@@ -12,6 +12,8 @@ import java.net.URI;
  */
 public class Point extends GeometricPrimitive {
 
+    private static final long serialVersionUID = -8421037127328679413L;
+
     private double[] pos;
 
     public Point() {

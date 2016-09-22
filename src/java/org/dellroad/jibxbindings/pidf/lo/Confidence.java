@@ -5,6 +5,8 @@
 
 package org.dellroad.jibxbindings.pidf.lo;
 
+import java.io.Serializable;
+
 import org.jibx.runtime.JiBXParseException;
 
 /**
@@ -12,9 +14,11 @@ import org.jibx.runtime.JiBXParseException;
  *
  * @see <a href="https://datatracker.ietf.org/doc/draft-ietf-geopriv-uncertainty/?include_text=1">Representation of Uncertainty and Confidence in PIDF-LO</a>
  */
-public class Confidence implements Cloneable {
+public class Confidence implements Cloneable, Serializable {
 
     public static final String UNKNOWN_VALUE = "unknown";
+
+    private static final long serialVersionUID = 1066415524497143043L;
 
     private ProbabilityDensityFunction probabilityDensityFunction = ProbabilityDensityFunction.UNKNOWN;
     private float value = Float.NaN;

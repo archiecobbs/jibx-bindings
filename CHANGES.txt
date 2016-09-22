@@ -3,6 +3,7 @@ Version Next
 
     - Updated ECRIT to no longer nest <vard> within <vcards>
       and allow the tag containing the <vcard> to be empty
+    - Make PIDF classes serializable
 
 Version 1.0.105 Released November 16, 2014
 

@@ -12,6 +12,8 @@ import java.net.URI;
  */
 public class Ellipse extends Surface {
 
+    private static final long serialVersionUID = -1937162640233201292L;
+
     private double[] center;
     private Measure semiMajorAxis;
     private Measure semiMinorAxis;

@@ -5,13 +5,17 @@
 
 package org.dellroad.jibxbindings.pidf.lo;
 
+import java.io.Serializable;
+
 import org.dellroad.jibxbindings.ParseUtil;
 import org.jibx.runtime.JiBXParseException;
 
 /**
  * The {@code <ca:civicAddress>} element as defined in RFC 5139.
  */
-public class CivicAddress implements Cloneable {
+public class CivicAddress implements Cloneable, Serializable {
+
+    private static final long serialVersionUID = -7996946557119731986L;
 
 // CHECKSTYLE OFF: MemberName
 // CHECKSTYLE OFF: ParameterNameCheck

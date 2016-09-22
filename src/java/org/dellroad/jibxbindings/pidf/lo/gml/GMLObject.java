@@ -5,10 +5,12 @@
 
 package org.dellroad.jibxbindings.pidf.lo.gml;
 
+import java.io.Serializable;
+
 /**
  * Superclass for GML objects.
  */
-public abstract class GMLObject implements Cloneable {
+public abstract class GMLObject implements Cloneable, Serializable {
 
     private String gmlId;
 

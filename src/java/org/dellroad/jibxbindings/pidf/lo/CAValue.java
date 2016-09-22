@@ -5,11 +5,15 @@
 
 package org.dellroad.jibxbindings.pidf.lo;
 
+import java.io.Serializable;
+
 /**
  * One field in a {@code <ca:civicAddress>} element as defined in RFC 5139.
  * This differs from {@link org.dellroad.jibxbindings.pidf.LangContent} in that the field content is whitespace normalized.
  */
-public class CAValue implements Cloneable {
+public class CAValue implements Cloneable, Serializable {
+
+    private static final long serialVersionUID = -5493271897495075186L;
 
     private String lang;
     private String content;

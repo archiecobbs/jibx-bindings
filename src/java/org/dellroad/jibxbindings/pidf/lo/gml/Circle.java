@@ -12,6 +12,8 @@ import java.net.URI;
  */
 public class Circle extends Surface {
 
+    private static final long serialVersionUID = -6609085723256871714L;
+
     private double[] center;
     private Measure radius;
 

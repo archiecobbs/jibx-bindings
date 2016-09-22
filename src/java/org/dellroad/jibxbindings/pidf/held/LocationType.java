@@ -5,13 +5,14 @@
 
 package org.dellroad.jibxbindings.pidf.held;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * The {@code <held:locationType>} XML element.
  */
-public class LocationType implements Cloneable {
+public class LocationType implements Cloneable, Serializable {
 
     /**
      * Value for the {@link #types} field meaning any type of response is acceptable.
@@ -32,6 +33,8 @@ public class LocationType implements Cloneable {
      * Value for the {@link #types} field meaning a dereferencable URI to the actual location.
      */
     public static final String LOCATION_URI = "locationURI";
+
+    private static final long serialVersionUID = 9040970010481886353L;
 
     private boolean exact;
     private List<String> types = new ArrayList<String>();

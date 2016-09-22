@@ -101,12 +101,12 @@ public class VCardMarshaller extends DomElementMapper {
     }
 
     /**
-     * Clone a {@link VCard} by converting it to XML and back.
-     * This method works around the fact that {@link VCard} does not implement {@link Cloneable}.
+     * Convert a {@link VCard} XML.
      *
+     * @param vcard vcard to serialize
      * @throws IllegalArgumentException if {@code vcard} is null
      */
-    public static VCard clone(VCard vcard) {
+    public static Document toXML(VCard vcard) {
 
         // Sanity check
         if (vcard == null)
@@ -115,7 +115,21 @@ public class VCardMarshaller extends DomElementMapper {
         // Convert to XML
         final XCardDocument xcard = new XCardDocument();
         xcard.add(vcard);
-        final Document doc = xcard.getDocument();
+        return xcard.getDocument();
+    }
+
+    /**
+     * Parse a {@link VCard} encoded as XML.
+     *
+     * @param doc XML document
+     * @throws IllegalArgumentException if {@code doc} is null
+     * @throws IllegalArgumentException if {@code doc} is invalid
+     */
+    public static VCard fromXML(Document doc) {
+
+        // Sanity check
+        if (doc == null)
+            throw new IllegalArgumentException("null doc");
 
         // Convert from XML
         try {
@@ -123,6 +137,16 @@ public class VCardMarshaller extends DomElementMapper {
         } catch (IOException e) {
             throw new RuntimeException("unexpected exception", e);
         }
+    }
+
+    /**
+     * Clone a {@link VCard} by converting it to XML and back.
+     * This method works around the fact that {@link VCard} does not implement {@link Cloneable}.
+     *
+     * @throws IllegalArgumentException if {@code vcard} is null
+     */
+    public static VCard clone(VCard vcard) {
+        return VCardMarshaller.fromXML(VCardMarshaller.toXML(vcard));
     }
 }
 

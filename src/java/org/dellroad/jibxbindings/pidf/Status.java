@@ -5,12 +5,16 @@
 
 package org.dellroad.jibxbindings.pidf;
 
+import java.io.Serializable;
+
 import org.dellroad.jibxbindings.pidf.lo.GeoPriv;
 
 /**
  * PIDF {@code <status>} element.
  */
-public class Status implements Cloneable {
+public class Status implements Cloneable, Serializable {
+
+    private static final long serialVersionUID = 5953067241126783298L;
 
     private Basic basic;
     private GeoPriv geoPriv;

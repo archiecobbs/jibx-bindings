@@ -5,12 +5,15 @@
 
 package org.dellroad.jibxbindings.pidf;
 
+import java.io.Serializable;
 import java.net.URI;
 
 /**
  * PIDF {@code <contact>} element.
  */
-public class Contact implements Cloneable {
+public class Contact implements Cloneable, Serializable {
+
+    private static final long serialVersionUID = 1688544846640343745L;
 
     private URI uri;
     private float priority;

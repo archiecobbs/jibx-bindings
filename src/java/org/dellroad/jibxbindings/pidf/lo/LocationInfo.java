@@ -5,12 +5,16 @@
 
 package org.dellroad.jibxbindings.pidf.lo;
 
+import java.io.Serializable;
+
 import org.dellroad.jibxbindings.pidf.lo.gml.GMLObject;
 
 /**
  * The {@code <gp:location-info>} element as defined in RFC 4119.
  */
-public class LocationInfo implements Cloneable {
+public class LocationInfo implements Cloneable, Serializable {
+
+    private static final long serialVersionUID = -7692978481044809061L;
 
     private CivicAddress civicAddress;
     private GMLObject gmlObject;

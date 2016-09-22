@@ -12,6 +12,8 @@ import java.net.URI;
  */
 public class Ellipsoid extends Solid {
 
+    private static final long serialVersionUID = 6729942009048799027L;
+
     private double[] center;
     private Measure semiMajorAxis;
     private Measure semiMinorAxis;

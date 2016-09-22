@@ -5,12 +5,15 @@
 
 package org.dellroad.jibxbindings.pidf.lo.ecd;
 
+import java.io.Serializable;
 import java.net.URI;
 
 /**
  * The {@code <ad:EmergencyCallDataReference>} element.
  */
-public class EmergencyCallDataReference implements Cloneable {
+public class EmergencyCallDataReference implements Cloneable, Serializable {
+
+    private static final long serialVersionUID = -8159764149907621721L;
 
     private String purpose;                     // mandatory
     private URI ref;                            // mandatory

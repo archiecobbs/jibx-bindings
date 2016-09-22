@@ -5,10 +5,14 @@
 
 package org.dellroad.jibxbindings.pidf;
 
+import java.io.Serializable;
+
 /**
  * Represents a string and a specified language.
  */
-public class LangContent implements Cloneable {
+public class LangContent implements Cloneable, Serializable {
+
+    private static final long serialVersionUID = -1664801480863183585L;
 
     private String lang;
     private String content;

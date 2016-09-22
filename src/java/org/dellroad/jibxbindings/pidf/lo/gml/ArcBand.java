@@ -12,6 +12,8 @@ import java.net.URI;
  */
 public class ArcBand extends Surface {
 
+    private static final long serialVersionUID = -4933947741608138063L;
+
     private double[] center;
     private Measure innerRadius;
     private Measure outerRadius;

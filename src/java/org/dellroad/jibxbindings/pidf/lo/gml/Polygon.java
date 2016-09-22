@@ -12,6 +12,8 @@ import java.net.URI;
  */
 public class Polygon extends Surface {
 
+    private static final long serialVersionUID = 1843974394933096510L;
+
     private LinearRing exterior;
 
     public Polygon() {

@@ -5,12 +5,16 @@
 
 package org.dellroad.jibxbindings.pidf.lo;
 
+import java.io.Serializable;
+
 import org.dellroad.jibxbindings.pidf.LangContent;
 
 /**
  * The {@code <gp:geopriv>} element as defined in RFC 4119.
  */
-public class GeoPriv implements Cloneable {
+public class GeoPriv implements Cloneable, Serializable {
+
+    private static final long serialVersionUID = -8421701457531625791L;
 
     private LocationInfo locationInfo;
     private UsageRules usageRules;

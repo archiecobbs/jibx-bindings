@@ -12,6 +12,8 @@ import java.net.URI;
  */
 public class Prism extends Solid {
 
+    private static final long serialVersionUID = -5746553414857816666L;
+
     private Surface base;
     private Measure height;
 

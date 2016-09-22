@@ -5,6 +5,7 @@
 
 package org.dellroad.jibxbindings.pidf;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -14,7 +15,9 @@ import org.dellroad.jibxbindings.pidf.lo.GeoPriv;
 /**
  * PIDF {@code <tuple>} element.
  */
-public class Tuple implements Component {
+public class Tuple implements Component, Serializable {
+
+    private static final long serialVersionUID = 1434065792540757817L;
 
     private String id;
     private Status status;

@@ -5,6 +5,7 @@
 
 package org.dellroad.jibxbindings.pidf.held;
 
+import java.io.Serializable;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.Date;
@@ -13,7 +14,9 @@ import java.util.List;
 /**
  * The {@code <held:locationUriSet>} XML element.
  */
-public class LocationUriSet implements Cloneable {
+public class LocationUriSet implements Cloneable, Serializable {
+
+    private static final long serialVersionUID = 6666564682115263618L;
 
     private Date expires;
     private List<URI> locationURIs = new ArrayList<URI>();
