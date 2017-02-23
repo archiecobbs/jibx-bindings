@@ -16,7 +16,7 @@ public class ServiceInfo extends AbstractDataProviderReferencing {
 
     private static final long serialVersionUID = -5742602259554881929L;
 
-    private String serviceEnvironment;                      // mandatory
+    private String serviceEnvironment;                      // optional
     private List<String> serviceTypes = new ArrayList<>();  // mandatory (one or more)
     private String serviceMobility;                         // mandatory
 

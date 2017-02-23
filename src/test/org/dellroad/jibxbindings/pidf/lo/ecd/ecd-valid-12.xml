@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- From https://tools.ietf.org/html/draft-ietf-ecrit-additional-data-24#page-19 -->
+<pidf:presence
+  xmlns:pidf="urn:ietf:params:xml:ns:pidf"
+  xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10"
+  xmlns:ca="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr"
+  xmlns:ad="urn:ietf:params:xml:ns:EmergencyCallData"
+  xmlns:svc="urn:ietf:params:xml:ns:EmergencyCallData:ServiceInfo"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  entity="pres:temp@held.ng911.lab:55603">
+  <pidf:tuple id="0a9999e0-1678-41d9-b0d2-d10a41a3e5e0">
+    <pidf:status>
+      <gp:geopriv xmlns="urn:ietf:params:xml:ns:pidf:geopriv10">
+        <gp:location-info>
+          <ca:civicAddress>
+            <ca:country>US</ca:country>
+            <ca:A1>MA</ca:A1>
+            <ca:A2>BERKSHIRE COUNTY</ca:A2>
+            <ca:RD>1ST</ca:RD>
+            <ca:STS>ST</ca:STS>
+            <ca:HNO>18</ca:HNO>
+            <ca:NAM>DUNKIN DONUTS</ca:NAM>
+            <ca:PC>01201</ca:PC>
+            <ca:POBOX>01201</ca:POBOX>
+          </ca:civicAddress>
+        </gp:location-info>
+        <gp:usage-rules/>
+        <gp:method>BUSN</gp:method>
+        <gp:provided-by>
+          <ad:EmergencyCallDataValue>
+            <svc:EmergencyCallData.ServiceInfo>
+              <svc:DataProviderReference>2468.IBOC.MLTS.1359@example.org</svc:DataProviderReference>
+              <svc:ServiceType>MLTS-hosted</svc:ServiceType>
+              <svc:ServiceMobility>Fixed</svc:ServiceMobility>
+            </svc:EmergencyCallData.ServiceInfo>
+          </ad:EmergencyCallDataValue>
+        </gp:provided-by>
+      </gp:geopriv>
+    </pidf:status>
+  </pidf:tuple>
+</pidf:presence>

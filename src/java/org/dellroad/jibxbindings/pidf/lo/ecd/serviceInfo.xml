@@ -5,7 +5,7 @@
     <mapping abstract="true" type-name="svc:serviceInfo" class="org.dellroad.jibxbindings.pidf.lo.ecd.ServiceInfo">
         <namespace uri="urn:ietf:params:xml:ns:EmergencyCallData:ServiceInfo" default="elements" prefix="svc"/>
         <value name="DataProviderReference" get-method="getDataProviderReference" set-method="setDataProviderReference"/>
-        <value name="ServiceEnvironment" field="serviceEnvironment"/>
+        <value name="ServiceEnvironment" field="serviceEnvironment" usage="optional"/>
         <collection field="serviceTypes" create-type="java.util.ArrayList">
             <value name="ServiceType" type="java.lang.String"/>
         </collection>
