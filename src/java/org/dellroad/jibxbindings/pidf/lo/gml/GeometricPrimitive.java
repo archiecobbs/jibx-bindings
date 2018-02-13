@@ -12,6 +12,8 @@ import java.net.URI;
  */
 public abstract class GeometricPrimitive extends Geometry {
 
+    private static final long serialVersionUID = -8649316792669442067L;
+
     protected GeometricPrimitive() {
     }
 

@@ -12,6 +12,8 @@ import java.net.URI;
  */
 public abstract class Solid extends GeometricPrimitive {
 
+    private static final long serialVersionUID = 7351757704647940529L;
+
     protected Solid() {
     }
 

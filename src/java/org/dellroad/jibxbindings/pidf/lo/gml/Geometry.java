@@ -14,6 +14,8 @@ import java.util.List;
  */
 public abstract class Geometry extends GMLObject {
 
+    private static final long serialVersionUID = 6279741094772824730L;
+
     private String gid;
     private URI srsName;
     private int srsDimension;

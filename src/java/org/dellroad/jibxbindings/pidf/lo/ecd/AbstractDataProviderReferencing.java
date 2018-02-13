@@ -12,6 +12,8 @@ import java.io.Serializable;
  */
 public abstract class AbstractDataProviderReferencing implements Cloneable, Serializable {
 
+    private static final long serialVersionUID = 4866632452628360362L;
+
     private String dataProviderReference;                   // mandatory
 
     protected AbstractDataProviderReferencing() {

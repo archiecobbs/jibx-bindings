@@ -12,6 +12,8 @@ import java.net.URI;
  */
 public abstract class Surface extends GeometricPrimitive {
 
+    private static final long serialVersionUID = 578636500157778282L;
+
     protected Surface() {
     }
 

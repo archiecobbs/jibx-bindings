@@ -12,6 +12,8 @@ import java.net.URI;
  */
 public abstract class Curve extends GeometricPrimitive {
 
+    private static final long serialVersionUID = 1625754697200244727L;
+
     protected Curve() {
     }
 

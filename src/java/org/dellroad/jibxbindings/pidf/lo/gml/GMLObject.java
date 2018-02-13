@@ -12,6 +12,8 @@ import java.io.Serializable;
  */
 public abstract class GMLObject implements Cloneable, Serializable {
 
+    private static final long serialVersionUID = 4523220353791564909L;
+
     private String gmlId;
 
     protected GMLObject() {
