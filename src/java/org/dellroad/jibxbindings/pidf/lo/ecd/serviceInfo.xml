@@ -2,13 +2,13 @@
 
 <binding package="org.dellroad.jibxbindings.pidf.lo.ecd"
   xmlns:svc="urn:ietf:params:xml:ns:EmergencyCallData:ServiceInfo">
-    <mapping abstract="true" type-name="svc:serviceInfo" class="org.dellroad.jibxbindings.pidf.lo.ecd.ServiceInfo">
+    <mapping abstract="true" type-name="svc:serviceInfo" class="org.dellroad.jibxbindings.pidf.lo.ecd.ServiceInfo"
+      ordered="false" flexible="true" allow-repeats="true">
         <namespace uri="urn:ietf:params:xml:ns:EmergencyCallData:ServiceInfo" default="elements" prefix="svc"/>
         <value name="DataProviderReference" get-method="getDataProviderReference" set-method="setDataProviderReference"/>
         <value name="ServiceEnvironment" field="serviceEnvironment" usage="optional"/>
-        <collection field="serviceTypes" create-type="java.util.ArrayList">
-            <value name="ServiceType" type="java.lang.String"/>
-        </collection>
+        <value name="ServiceType" type="java.lang.String" usage="optional"
+          get-method="getServiceType" set-method="setServiceType"/>
         <value name="ServiceMobility" field="serviceMobility"/>
     </mapping>
 </binding>

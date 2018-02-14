@@ -103,6 +103,15 @@ public class ProviderInfo extends AbstractDataProviderReferencing {
         this.subcontratorPriority = subcontratorPriority;
     }
 
+// Workaround http://jira.codehaus.org/browse/JIBX-402
+
+    public void setLanguage(String language) {
+        this.languages.add(language);
+    }
+    public String getLanguage() {
+        return !this.languages.isEmpty() ? this.languages.get(0) : null;
+    }
+
 // JiBX
 
     public boolean hasDataProviderContact() {

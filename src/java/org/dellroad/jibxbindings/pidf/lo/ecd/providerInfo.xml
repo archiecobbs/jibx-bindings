@@ -2,7 +2,8 @@
 
 <binding package="org.dellroad.jibxbindings.pidf.lo.ecd"
   xmlns:pi="urn:ietf:params:xml:ns:EmergencyCallData:ProviderInfo">
-    <mapping abstract="true" type-name="pi:providerInfo" class="org.dellroad.jibxbindings.pidf.lo.ecd.ProviderInfo">
+    <mapping abstract="true" type-name="pi:providerInfo" class="org.dellroad.jibxbindings.pidf.lo.ecd.ProviderInfo"
+      ordered="false" flexible="true" allow-repeats="true">
         <namespace uri="urn:ietf:params:xml:ns:EmergencyCallData:ProviderInfo" default="elements" prefix="pi"/>
         <namespace uri="urn:ietf:params:xml:ns:vcard-4.0" prefix="vc"/>
         <value name="DataProviderReference" get-method="getDataProviderReference" set-method="setDataProviderReference"/>
@@ -13,9 +14,7 @@
         <value name="ContactURI" field="contactURI" usage="optional"
           serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
           deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
-        <collection field="languages" create-type="java.util.ArrayList">
-            <value name="Language" type="java.lang.String"/>
-        </collection>
+        <value name="Language" type="java.lang.String" usage="optional" get-method="getLanguage" set-method="setLanguage"/>
         <structure name="DataProviderContact" usage="optional" test-method="hasDataProviderContact">
             <structure name="vcard" field="dataProviderContact" ns="urn:ietf:params:xml:ns:vcard-4.0" usage="optional"
               marshaller="org.dellroad.jibxbindings.vcard.VCardMarshaller"

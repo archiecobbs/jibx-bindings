@@ -53,6 +53,15 @@ public class Comment extends AbstractDataProviderReferencing {
         return super.hashCode() ^ Objects.hashCode(this.comments);
     }
 
+// Workaround http://jira.codehaus.org/browse/JIBX-402
+
+    public void setComment(LangContent comment) {
+        this.comments.add(comment);
+    }
+    public LangContent getComment() {
+        return !this.comments.isEmpty() ? this.comments.get(0) : null;
+    }
+
 // Cloneable
 
     @Override

@@ -4,11 +4,10 @@
   xmlns:pidf="urn:ietf:params:xml:ns:pidf"
   xmlns:com="urn:ietf:params:xml:ns:EmergencyCallData:Comment">
     <include path="../../langContent.xml"/>
-    <mapping abstract="true" type-name="com:comment" class="org.dellroad.jibxbindings.pidf.lo.ecd.Comment">
+    <mapping abstract="true" type-name="com:comment" class="org.dellroad.jibxbindings.pidf.lo.ecd.Comment"
+      ordered="false" flexible="true" allow-repeats="true">
         <namespace uri="urn:ietf:params:xml:ns:EmergencyCallData:Comment" default="elements" prefix="com"/>
         <value name="DataProviderReference" get-method="getDataProviderReference" set-method="setDataProviderReference"/>
-        <collection field="comments" create-type="java.util.ArrayList">
-            <structure name="Comment" map-as="pidf:langContent"/>
-        </collection>
+        <structure name="Comment" map-as="pidf:langContent" usage="optional" get-method="getComment" set-method="setComment"/>
     </mapping>
 </binding>

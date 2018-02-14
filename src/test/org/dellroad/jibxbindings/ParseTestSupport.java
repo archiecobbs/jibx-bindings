@@ -11,6 +11,7 @@ import java.io.InputStream;
 import java.io.StringWriter;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import org.jibx.runtime.BindingDirectory;
 import org.jibx.runtime.IBindingFactory;
@@ -30,19 +31,22 @@ public abstract class ParseTestSupport extends TestSupport {
      * Parse the document expecting the parse to succeed. If it does, also unparse the document.
      */
     protected <T> void testValidParse(URL url, Class<T> clazz, String... name) throws Exception {
+        this.log.info("testValidParse():\n  url=" + url + "\n  class=" + clazz.getName() + "\n  name=" + Arrays.asList(name));
+        final String file = url.toString().substring(url.toString().lastIndexOf("/") + 1);
 
         // Parse it
         T t1 = this.parse(url, clazz, name);
 
         // Unparse it
         String xml1 = this.unparse(t1, name);
-        System.out.println(xml1);
+        this.log.info("testValidParse(): " + file + " xml1:\n" + xml1);
 
         // Parse it again
         T t2 = this.parse(xml1, clazz, name);
 
         // Unparse it again
         String xml2 = this.unparse(t2, name);
+        this.log.info("testValidParse(): " + file + " xml2:\n" + xml1);
 
         // Compare
         assertEquals(xml1, xml2);

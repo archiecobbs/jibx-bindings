@@ -50,6 +50,15 @@ public class ServiceInfo extends AbstractDataProviderReferencing {
         this.serviceMobility = serviceMobility;
     }
 
+// Workaround http://jira.codehaus.org/browse/JIBX-402
+
+    public void setServiceType(String serviceType) {
+        this.serviceTypes.add(serviceType);
+    }
+    public String getServiceType() {
+        return !this.serviceTypes.isEmpty() ? this.serviceTypes.get(0) : null;
+    }
+
 // Cloneable
 
     @Override

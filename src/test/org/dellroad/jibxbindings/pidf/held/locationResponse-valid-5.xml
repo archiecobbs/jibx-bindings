@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<locationResponse xmlns="urn:ietf:params:xml:ns:geopriv:held">
+  <locationUriSet expires="2017-06-02T21:48:34Z">
+    <locationURI>http://localhost/LIS/?LbyR=44315261-50ad-4586-9480-cdbc64d6e4c1</locationURI>
+  </locationUriSet>
+  <presence entity="pres:temp@localhost" xmlns="urn:ietf:params:xml:ns:pidf">
+    <tuple id="303a797b-29c9-46d7-a7fe-2aa5acfc2105">
+      <status>
+        <geopriv xmlns="urn:ietf:params:xml:ns:pidf:geopriv10">
+          <location-info>
+            <Circle srsName="urn:ogc:def:crs:EPSG::4326" xmlns="http://www.opengis.net/pidflo/1.0">
+              <pos xmlns="http://www.opengis.net/gml">38.95 -63.05</pos>
+              <radius uom="urn:ogc:def:uom:EPSG::9001">500</radius>
+            </Circle>
+            <confidence xmlns="urn:ietf:params:xml:ns:geopriv:conf">90</confidence>
+          </location-info>
+          <usage-rules />
+          <method>Derived</method>
+          <provided-by>
+            <EmergencyCallDataValue xmlns="urn:ietf:params:xml:ns:EmergencyCallData">
+              <EmergencyCallData.ProviderInfo xmlns="urn:ietf:params:xml:ns:EmergencyCallData:ProviderInfo">
+                <DataProviderReference>54780dbf8a@example.net</DataProviderReference>
+                <DataProviderString>Example, Inc.</DataProviderString>
+                <ProviderID>urn:nena:companyid:EXAMPLE</ProviderID>
+                <ProviderIDSeries>NENA</ProviderIDSeries>
+                <TypeOfProvider>Telecom Provider</TypeOfProvider>
+                <ContactURI>tel:+18005551212</ContactURI>
+                <Language>en</Language>
+                <DataProviderContact>
+                  <vcard xmlns="urn:ietf:params:xml:ns:vcard-4.0">
+                    <fn>
+                      <text>Support Manager</text>
+                    </fn>
+                  </vcard>
+                </DataProviderContact>
+              </EmergencyCallData.ProviderInfo>
+              <EmergencyCallData.ServiceInfo xmlns="urn:ietf:params:xml:ns:EmergencyCallData:ServiceInfo">
+                <DataProviderReference>98e13881-e787-48b8-85a9-f757408bd8fa@example.net</DataProviderReference>
+                <ServiceEnvironment>Business</ServiceEnvironment>
+                <ServiceType>wireless</ServiceType>
+                <ServiceType>OTT</ServiceType>
+                <ServiceMobility>Mobile</ServiceMobility>
+                <LegacyClassOfService xmlns="http://example.net/addcallinfo">RESD</LegacyClassOfService>
+              </EmergencyCallData.ServiceInfo>
+              <EmergencyCallData.DeviceInfo xmlns="urn:ietf:params:xml:ns:EmergencyCallData:DeviceInfo">
+                <DataProviderReference>98e13881-e787-48b8-85a9-f757408bd8fa@example.net</DataProviderReference>
+                <DeviceClassification>fixed</DeviceClassification>
+                <DeviceMfgr>Walmart</DeviceMfgr>
+                <DeviceModelNr>X1</DeviceModelNr>
+                <UniqueDeviceID TypeOfDeviceID="IMEI">4657981324</UniqueDeviceID>
+                <UniqueDeviceID TypeOfDeviceID="SN">123654</UniqueDeviceID>
+                <DeviceSpecificData>http://example.com/device/w5n43</DeviceSpecificData>
+                <DeviceSpecificType>IEEE1512</DeviceSpecificType>
+              </EmergencyCallData.DeviceInfo>
+              <EmergencyCallData.SubscriberInfo privacyRequested="true" xmlns="urn:ietf:params:xml:ns:EmergencyCallData:SubscriberInfo">
+                <DataProviderReference>98e13881-e787-48b8-85a9-f757408bd8fa@example.net</DataProviderReference>
+                <SubscriberData>
+                  <vcard xmlns="urn:ietf:params:xml:ns:vcard-4.0">
+                    <fn>
+                      <text>J. Doe</text>
+                    </fn>
+                  </vcard>
+                </SubscriberData>
+                <DisabilityIndicators xmlns="http://example.net/addcallinfo">DeafOrHardOfHearing SpeechImpaired</DisabilityIndicators>
+              </EmergencyCallData.SubscriberInfo>
+              <EmergencyCallData.Comment xmlns="urn:ietf:params:xml:ns:EmergencyCallData:Comment">
+                <DataProviderReference>98e13881-e787-48b8-85a9-f757408bd8fa@example.net</DataProviderReference>
+                <Comment xml:lang="en">This is a comment.</Comment>
+                <Comment>This is also a comment.</Comment>
+              </EmergencyCallData.Comment>
+            </EmergencyCallDataValue>
+          </provided-by>
+        </geopriv>
+      </status>
+      <contact>tel:+18005551212</contact>
+      <timestamp>2016-02-18T21:39:30Z</timestamp>
+    </tuple>
+    <tuple id="3482f88d-5069-4fdb-8fbe-827dc36c3874">
+      <status>
+        <geopriv xmlns="urn:ietf:params:xml:ns:pidf:geopriv10">
+          <location-info>
+            <civicAddress xmlns="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr">
+              <country>US</country>
+              <A1>OH</A1>
+              <A2>Franklin County</A2>
+              <A3>Columbus</A3>
+              <PRD>North</PRD>
+              <RD>High</RD>
+              <STS>Street</STS>
+              <HNO>123</HNO>
+              <NAM>Test Record</NAM>
+            </civicAddress>
+          </location-info>
+          <usage-rules />
+          <method>Manual</method>
+          <provided-by>
+            <EmergencyCallDataValue xmlns="urn:ietf:params:xml:ns:EmergencyCallData">
+              <EmergencyCallData.ProviderInfo xmlns="urn:ietf:params:xml:ns:EmergencyCallData:ProviderInfo">
+                <DataProviderReference>98e13881-e787-48b8-85a9-f757408bd8fa@example.net</DataProviderReference>
+                <DataProviderString>Example, Inc.</DataProviderString>
+                <ProviderID>urn:nena:companyid:EXAMPLE</ProviderID>
+                <ProviderIDSeries>NENA</ProviderIDSeries>
+                <TypeOfProvider>Telecom Provider</TypeOfProvider>
+                <ContactURI>tel:+18005551212</ContactURI>
+                <Language>en</Language>
+                <DataProviderContact>
+                  <vcard xmlns="urn:ietf:params:xml:ns:vcard-4.0">
+                    <fn>
+                      <text>Support Manager</text>
+                    </fn>
+                  </vcard>
+                </DataProviderContact>
+              </EmergencyCallData.ProviderInfo>
+              <EmergencyCallData.ServiceInfo xmlns="urn:ietf:params:xml:ns:EmergencyCallData:ServiceInfo">
+                <DataProviderReference>98e13881-e787-48b8-85a9-f757408bd8fa@example.net</DataProviderReference>
+                <ServiceEnvironment>Business</ServiceEnvironment>
+                <ServiceType>wireless</ServiceType>
+                <ServiceType>OTT</ServiceType>
+                <ServiceMobility>Mobile</ServiceMobility>
+                <LegacyClassOfService xmlns="http://example.net/addcallinfo">RESD</LegacyClassOfService>
+              </EmergencyCallData.ServiceInfo>
+              <EmergencyCallData.DeviceInfo xmlns="urn:ietf:params:xml:ns:EmergencyCallData:DeviceInfo">
+                <DataProviderReference>98e13881-e787-48b8-85a9-f757408bd8fa@example.net</DataProviderReference>
+                <DeviceClassification>fixed</DeviceClassification>
+                <DeviceMfgr>Walmart</DeviceMfgr>
+                <DeviceModelNr>X1</DeviceModelNr>
+                <UniqueDeviceID TypeOfDeviceID="IMEI">4657981324</UniqueDeviceID>
+                <UniqueDeviceID TypeOfDeviceID="SN">123654</UniqueDeviceID>
+                <DeviceSpecificData>http://example.com/device/w5n43</DeviceSpecificData>
+                <DeviceSpecificType>IEEE1512</DeviceSpecificType>
+              </EmergencyCallData.DeviceInfo>
+              <EmergencyCallData.SubscriberInfo privacyRequested="true" xmlns="urn:ietf:params:xml:ns:EmergencyCallData:SubscriberInfo">
+                <DataProviderReference>98e13881-e787-48b8-85a9-f757408bd8fa@example.net</DataProviderReference>
+                <SubscriberData>
+                  <vcard xmlns="urn:ietf:params:xml:ns:vcard-4.0">
+                    <fn>
+                      <text>J. Doe</text>
+                    </fn>
+                  </vcard>
+                </SubscriberData>
+                <DisabilityIndicators xmlns="http://example.net/addcallinfo">DeafOrHardOfHearing SpeechImpaired</DisabilityIndicators>
+              </EmergencyCallData.SubscriberInfo>
+              <EmergencyCallData.Comment xmlns="urn:ietf:params:xml:ns:EmergencyCallData:Comment">
+                <DataProviderReference>98e13881-e787-48b8-85a9-f757408bd8fa@example.net</DataProviderReference>
+                <Comment xml:lang="en">This is a comment.</Comment>
+                <Comment>This is also a comment.</Comment>
+              </EmergencyCallData.Comment>
+            </EmergencyCallDataValue>
+          </provided-by>
+          <lvfValidityState xmlns="http://example.net/geoprivext">Unvalidated</lvfValidityState>
+        </geopriv>
+      </status>
+      <contact>tel:+18005551212</contact>
+      <timestamp>2016-03-08T12:00:00Z</timestamp>
+    </tuple>
+  </presence>
+</locationResponse>

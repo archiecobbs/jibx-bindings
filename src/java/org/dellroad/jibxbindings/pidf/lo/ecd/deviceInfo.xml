@@ -3,15 +3,15 @@
 <binding package="org.dellroad.jibxbindings.pidf.lo.ecd"
   xmlns:dev="urn:ietf:params:xml:ns:EmergencyCallData:DeviceInfo">
     <include path="uniqueDeviceID.xml"/>
-    <mapping abstract="true" type-name="dev:deviceInfo" class="org.dellroad.jibxbindings.pidf.lo.ecd.DeviceInfo">
+    <mapping abstract="true" type-name="dev:deviceInfo" class="org.dellroad.jibxbindings.pidf.lo.ecd.DeviceInfo"
+      ordered="false" flexible="true" allow-repeats="true">
         <namespace uri="urn:ietf:params:xml:ns:EmergencyCallData:DeviceInfo" default="elements" prefix="dev"/>
         <value name="DataProviderReference" get-method="getDataProviderReference" set-method="setDataProviderReference"/>
         <value name="DeviceClassification" field="deviceClassification" usage="optional"/>
         <value name="DeviceMfgr" field="deviceMfgr" usage="optional"/>
         <value name="DeviceModelNr" field="deviceModelNr" usage="optional"/>
-        <collection field="uniqueDeviceIDs" create-type="java.util.ArrayList">
-            <structure name="UniqueDeviceID" map-as="dev:uniqueDeviceID"/>
-        </collection>
+        <structure name="UniqueDeviceID" map-as="dev:uniqueDeviceID" usage="optional"
+          get-method="getUniqueDeviceID" set-method="setUniqueDeviceID"/>
         <value name="DeviceSpecificData" field="deviceSpecificData" usage="optional"/>
         <value name="DeviceSpecificType" field="deviceSpecificType" usage="optional"/>
     </mapping>

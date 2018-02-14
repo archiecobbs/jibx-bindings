@@ -71,6 +71,15 @@ public class DeviceInfo extends AbstractDataProviderReferencing {
         this.deviceSpecificType = deviceSpecificType;
     }
 
+// Workaround http://jira.codehaus.org/browse/JIBX-402
+
+    public void setUniqueDeviceID(UniqueDeviceID uniqueDeviceID) {
+        this.uniqueDeviceIDs.add(uniqueDeviceID);
+    }
+    public UniqueDeviceID getUniqueDeviceID() {
+        return !this.uniqueDeviceIDs.isEmpty() ? this.uniqueDeviceIDs.get(0) : null;
+    }
+
 // Cloneable
 
     @Override
