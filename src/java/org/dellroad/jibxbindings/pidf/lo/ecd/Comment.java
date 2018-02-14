@@ -8,6 +8,7 @@ package org.dellroad.jibxbindings.pidf.lo.ecd;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 import org.dellroad.jibxbindings.pidf.LangContent;
 
@@ -33,6 +34,23 @@ public class Comment extends AbstractDataProviderReferencing {
     }
     public void setComments(List<LangContent> comments) {
         this.comments = comments;
+    }
+
+// Object
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this)
+            return true;
+        if (!super.equals(obj))
+            return false;
+        final Comment that = (Comment)obj;
+        return Objects.equals(this.comments, that.comments);
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode() ^ Objects.hashCode(this.comments);
     }
 
 // Cloneable

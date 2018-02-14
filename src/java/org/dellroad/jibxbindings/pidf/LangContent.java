@@ -6,6 +6,7 @@
 package org.dellroad.jibxbindings.pidf;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  * Represents a string and a specified language.
@@ -46,6 +47,23 @@ public class LangContent implements Cloneable, Serializable {
         } catch (CloneNotSupportedException e) {
             throw new RuntimeException(e);
         }
+    }
+
+// Object
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this)
+            return true;
+        if (obj == null || obj.getClass() != this.getClass())
+            return false;
+        final LangContent that = (LangContent)obj;
+        return Objects.equals(this.lang, that.lang) && Objects.equals(this.content, that.content);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(this.lang) ^ Objects.hashCode(this.content);
     }
 }
 

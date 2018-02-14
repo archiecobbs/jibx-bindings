@@ -6,6 +6,7 @@
 package org.dellroad.jibxbindings.pidf.lo.ecd;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  * Support superclass.
@@ -28,6 +29,23 @@ public abstract class AbstractDataProviderReferencing implements Cloneable, Seri
     }
     public void setDataProviderReference(String dataProviderReference) {
         this.dataProviderReference = dataProviderReference;
+    }
+
+// Object
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this)
+            return true;
+        if (obj == null || obj.getClass() != this.getClass())
+            return false;
+        final AbstractDataProviderReferencing that = (AbstractDataProviderReferencing)obj;
+        return Objects.equals(this.dataProviderReference, that.dataProviderReference);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(this.dataProviderReference);
     }
 
 // Cloneable
