@@ -39,7 +39,25 @@
     <macrodef uri="urn:org.dellroad.ant" name="findantlib">
         <attribute name="property" description="Name of property to set"/>
         <attribute name="file" description="Name of library to look for"/>
+        <attribute name="envvar" description="Name of environment variable to try"/>
         <sequential>
+            <property environment="env"/>
+            <condition property="@{property}" value="${basedir}/src/build/@{file}">
+                <and>
+                    <not>
+                        <isset property="@{property}"/>
+                    </not>
+                    <available file="${basedir}/src/build/@{file}" type="file"/>
+                </and>
+            </condition>
+            <condition property="@{property}" value="${env.@{envvar}}">
+                <and>
+                    <not>
+                        <isset property="@{property}"/>
+                    </not>
+                    <available file="${env.@{envvar}}" type="file"/>
+                </and>
+            </condition>
             <condition property="@{property}" value="${data.dir}/java/@{file}">
                 <and>
                     <not>
@@ -56,7 +74,15 @@
                     <available file="${ant.library.dir}/@{file}" type="file"/>
                 </and>
             </condition>
-            <fail message="ERROR: can't find @{file}; please install in ${data.dir}/java or ${ant.library.dir}, or pass -D@{property}=... on the command line">
+            <condition property="@{property}" value="/usr/share/java/ant/@{file}">
+                <and>
+                    <not>
+                        <isset property="@{property}"/>
+                    </not>
+                    <available file="/usr/share/java/ant/@{file}" type="file"/>
+                </and>
+            </condition>
+            <fail message="ERROR: &#10;&#10;Can't find @{file}; please do one of the following:&#10;&#10;  o Install in ${data.dir}/java&#10;  o Install in ${ant.library.dir}&#10;  o Install in /usr/share/java/ant/&#10;  o Set environment variable @{envvar}&#10;  o Pass -D@{property}=... on the command line">
                 <condition>
                     <not>
                         <isset property="@{property}"/>
@@ -78,12 +104,12 @@
 -->
 
     <!-- Import ivy ant tasks -->
-    <dellroad:findantlib property="ivy.jar" file="ivy.jar"/>
+    <dellroad:findantlib property="ivy.jar" file="ivy.jar" envvar="IVY_JAR"/>
     <taskdef uri="urn:org.apache.ivy.ant" resource="org/apache/ivy/ant/antlib.xml" classpath="${ivy.jar}"/>
 
     <!-- Import ant-contrib ant tasks -->
-    <dellroad:findantlib property="ant-contrib.jar" file="ant-contrib.jar"/>
-    <taskdef uri="urn:net.sf.antcontrib" resource="net/sf/antcontrib/antcontrib.properties" classpath="${ant-contrib.jar}"/>
+    <dellroad:findantlib property="ant-contrib.jar" file="ant-contrib.jar" envvar="ANT_CONTRIB_JAR"/>
+    <taskdef uri="urn:net.sf.antcontrib" resource="net/sf/antcontrib/antlib.xml" classpath="${ant-contrib.jar}"/>
 
     <!-- Get the sed(1) 'extended regular expression' flag for this O/S ('-E' for BSDish, '-r' for Linux) -->
     <exec outputproperty="sed.extended.flag" executable="/bin/sh" logError="true" failonerror="true">
