@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:presence xmlns:ns2="urn:ietf:params:xml:ns:pidf" entity="pres:1fmcy3pre2d.4f3hd40.gbd@lisadrws.west.com">
+    <ns2:tuple id="lisLocation">
+        <ns2:status>
+            <ns1:geopriv xmlns:gbp="urn:ietf:params:xml:ns:pidf:geopriv10:basicPolicy" xmlns:ns1="urn:ietf:params:xml:ns:pidf:geopriv10">
+                <ns1:location-info>
+                    <ca:civicAddress xmlns:ca="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr" xml:lang="en-us">
+                        <ca:country>US</ca:country>
+                        <ca:A1>AZ</ca:A1>
+                        <ca:A3>TEST AZ</ca:A3>
+                        <ca:RD>TEST ONE RD</ca:RD>
+                        <ca:HNO>13000</ca:HNO>
+                    </ca:civicAddress>
+                </ns1:location-info>
+                <ns1:usage-rules>
+                    <gbp:retransmission-allowed>true</gbp:retransmission-allowed>
+                    <gbp:retention-expiry>2020-08-26T16:57:58Z</gbp:retention-expiry>
+                </ns1:usage-rules>
+                <ns1:method>Manual</ns1:method>
+                <ns1:provided-by>
+                    <ns1:DataProviderID xmlns:ns1="urn:ietf:params:xml:ns:pidf:geopriv10:dataProvider">TRDO</ns1:DataProviderID>
+                    <ns1:TelURI xmlns:ns1="urn:ietf:params:xml:ns:pidf:geopriv10:dataProvider">tel:877-555-1212;phone-context=example.com</ns1:TelURI>
+                </ns1:provided-by>
+            </ns1:geopriv>
+        </ns2:status>
+        <ns2:timestamp>2020-08-26T14:57:58Z</ns2:timestamp>
+    </ns2:tuple>
+</ns2:presence>

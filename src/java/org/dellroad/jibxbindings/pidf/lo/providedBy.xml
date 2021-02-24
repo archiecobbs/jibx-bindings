@@ -2,16 +2,24 @@
 
 <binding package="org.dellroad.jibxbindings.pidf.lo"
   xmlns:ad="urn:ietf:params:xml:ns:EmergencyCallData"
-  xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10">
+  xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10"
+  xmlns:dp="urn:ietf:params:xml:ns:pidf:geopriv10:dataProvider">
     <include path="ecd/emergencyCallDataReference.xml"/>
     <include path="ecd/emergencyCallDataValue.xml"/>
     <mapping abstract="true" type-name="gp:providedBy" class="org.dellroad.jibxbindings.pidf.lo.ProvidedBy">
         <namespace uri="urn:ietf:params:xml:ns:EmergencyCallData" default="elements" prefix="ad"/>
+        <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10:dataProvider" prefix="dp"/>
         <collection field="references" create-type="java.util.ArrayList">
             <structure name="EmergencyCallDataReference" map-as="ad:emergencyCallDataReference"/>
         </collection>
         <collection field="values" create-type="java.util.ArrayList">
             <structure name="EmergencyCallDataValue" map-as="ad:emergencyCallDataValue"/>
         </collection>
+        <value field="dataProviderID" name="DataProviderID" ns="urn:ietf:params:xml:ns:pidf:geopriv10:dataProvider"
+          usage="optional"/>
+        <value field="telURI" name="TelURI" ns="urn:ietf:params:xml:ns:pidf:geopriv10:dataProvider" usage="optional"/>
+        <value field="url" name="URL" ns="urn:ietf:params:xml:ns:pidf:geopriv10:dataProvider" usage="optional"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
     </mapping>
 </binding>

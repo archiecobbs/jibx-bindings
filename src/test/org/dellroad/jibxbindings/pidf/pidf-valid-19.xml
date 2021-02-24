@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:presence xmlns:ns2="urn:ietf:params:xml:ns:pidf" entity="pres:1g37vh86r4c.4f3hd45.gbb@lisadrws.west.com">
+    <ns2:tuple id="lisLocation">
+        <ns2:status>
+            <ns1:geopriv xmlns:gbp="urn:ietf:params:xml:ns:pidf:geopriv10:basicPolicy" xmlns:ns1="urn:ietf:params:xml:ns:pidf:geopriv10">
+                <ns1:location-info>
+                    <gml:Point xmlns:gml="http://www.opengis.net/gml" gml:id="point1" srsName="urn:ogc:def:crs:EPSG::4326">
+                        <gml:pos>39.427681 -133.498352</gml:pos>
+                    </gml:Point>
+                    <ca:civicAddress xmlns:ca="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr" xml:lang="en-us">
+                        <ca:country>US</ca:country>
+                        <ca:A1>AZ</ca:A1>
+                        <ca:A3>TEST AZ</ca:A3>
+                        <ca:PRD>N</ca:PRD>
+                        <ca:RD>TEST FOUR RD</ca:RD>
+                        <ca:HNO>11001</ca:HNO>
+                    </ca:civicAddress>
+                </ns1:location-info>
+                <ns1:usage-rules>
+                    <gbp:retransmission-allowed>true</gbp:retransmission-allowed>
+                    <gbp:retention-expiry>2021-02-22T19:47:20Z</gbp:retention-expiry>
+                </ns1:usage-rules>
+                <ns1:method>Manual</ns1:method>
+                <ns1:provided-by>
+                    <dp:DataProviderID xmlns:dp="urn:ietf:params:xml:ns:pidf:geopriv10:dataProvider">TRDO</dp:DataProviderID>
+                    <dp:TelURI xmlns:dp="urn:ietf:params:xml:ns:pidf:geopriv10:dataProvider">tel:877-555-1212;phone-context=example.com</dp:TelURI>
+                </ns1:provided-by>
+            </ns1:geopriv>
+        </ns2:status>
+        <ns2:timestamp>2021-02-22T17:47:20Z</ns2:timestamp>
+    </ns2:tuple>
+</ns2:presence>

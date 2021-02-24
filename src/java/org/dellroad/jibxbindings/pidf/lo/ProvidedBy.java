@@ -6,6 +6,7 @@
 package org.dellroad.jibxbindings.pidf.lo;
 
 import java.io.Serializable;
+import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,6 +22,9 @@ public class ProvidedBy implements Cloneable, Serializable {
 
     private List<EmergencyCallDataReference> references = new ArrayList<>();
     private List<EmergencyCallDataValue> values = new ArrayList<>();
+    private String dataProviderID;
+    private String telURI;
+    private URI url;
 
     public List<EmergencyCallDataReference> getReferences() {
         return this.references;
@@ -34,6 +38,27 @@ public class ProvidedBy implements Cloneable, Serializable {
     }
     public void setValues(List<EmergencyCallDataValue> values) {
         this.values = values;
+    }
+
+    public String getDataProviderID() {
+        return this.dataProviderID;
+    }
+    public void setDataProviderID(String dataProviderID) {
+        this.dataProviderID = dataProviderID;
+    }
+
+    public String getTelURI() {
+        return this.telURI;
+    }
+    public void setTelURI(String telURI) {
+        this.telURI = telURI;
+    }
+
+    public URI getURL() {
+        return this.url;
+    }
+    public void setURL(URI url) {
+        this.url = url;
     }
 
 // Cloneable
